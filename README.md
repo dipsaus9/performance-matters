@@ -1,18 +1,17 @@
-# Performance matters
+# CSS Performance
+I've checked multiple ways to get a better performance on the Bootstrap website. This part will describe the way I optimalized the CSS.
 
-## Project setup
+## CSS Minifiy
+This may sound like a easy solution and it is. By doing this the wesbite will load a lot faster. First I placed all the css on the end of the page. This will result in a fast loading page. The only problem with this is a page being loaded without css. After 1 or 2 seconds the page will jump to the right css. This is a very annoying feeling. To solve this problem I created a crictical css. The crictical will create all the css shown on the first page / first viewheight. This will prevent the page from jumping. After this I minfied all the remaining css. The font css was disabling the text from showing till the text was loaded.
 
-This project serves an adapted version of the [Bootstrap documentation website](http://getbootstrap.com/). It is based on the [github pages branche of Bootstrap](https://github.com/twbs/bootstrap/tree/gh-pages). 
+`font-display: swap`
 
-Differences from actual Bootstrap documentation:
+If you use this code u can tell the browser to use a system font till the custom font is loaded. This way you can always see the text while the page is still loading.
 
-- Added custom webfont
-- Removed third party scripts
-- The src directory is served with [Express](https://expressjs.com/).
-- Templating is done with [Nunjucks](https://mozilla.github.io/nunjucks/)
+Using these methods I created a faster page. This also results into a faster loading first paint. This give the user a better experience.
 
-## Getting started
+Before:
+![First paint before](https://raw.githubusercontent.com/dipsaus9/performance-matters/CSS-A/firstpaint_without_css.png)
 
-- Install dependencies: `npm install`
-- Serve: `npm start`
-- Expose localhost: `npm run expose`
+After:
+![First paint after](https://raw.githubusercontent.com/dipsaus9/performance-matters/CSS-A/firstpaint_with_css.png)
