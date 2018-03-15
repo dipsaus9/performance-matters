@@ -18,11 +18,11 @@ Differences from actual Bootstrap documentation:
 - Expose localhost: `npm run expose`
 
 ## Branches
-There are 3 branches in this project
+There are 4 branches in this project
 * Master
 * CSS-A
 * JS-A
 * IMG-A
 
-In the master you can find the original project. This project will be the slowest of all. When you enter a different branch you can find the result in the AUDIT.md. This file will contain all the conclusions and results of that project.
-Each branch has a diffrent approach of speeding up the page. These tests were all performed on a Chrome browser. 
+In the master you can find the original project. This project will be the slowest of all. When you enter a different branch you can find the result in the readme.md. This file will contain all the conclusions and results of that project.
+Each branch has a diffrent approach of speeding up the page. These tests were all performed on a Chrome browser.
