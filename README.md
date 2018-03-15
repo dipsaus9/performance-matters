@@ -2,7 +2,7 @@
 
 ## Project setup
 
-This project serves an adapted version of the [Bootstrap documentation website](http://getbootstrap.com/). It is based on the [github pages branche of Bootstrap](https://github.com/twbs/bootstrap/tree/gh-pages). 
+This project serves an adapted version of the [Bootstrap documentation website](http://getbootstrap.com/). It is based on the [github pages branche of Bootstrap](https://github.com/twbs/bootstrap/tree/gh-pages).
 
 Differences from actual Bootstrap documentation:
 
@@ -16,3 +16,13 @@ Differences from actual Bootstrap documentation:
 - Install dependencies: `npm install`
 - Serve: `npm start`
 - Expose localhost: `npm run expose`
+
+## Branches
+There are 3 branches in this project
+* Master
+* CSS-A
+* JS-A
+* IMG-A
+
+In the master you can find the original project. This project will be the slowest of all. When you enter a different branch you can find the result in the AUDIT.md. This file will contain all the conclusions and results of that project.
+Each branch has a diffrent approach of speeding up the page. These tests were all performed on a Chrome browser. 
