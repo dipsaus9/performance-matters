@@ -15,3 +15,6 @@ Before:
 
 After:
 ![First paint after](https://raw.githubusercontent.com/dipsaus9/performance-matters/CSS-A/firstpaint_with_css.png)
+
+I also created a async loading off the css. This resulted into a really fast first paint.
+![async](https://raw.githubusercontent.com/dipsaus9/performance-matters/CSS-A/firstpaint_with_css_async.png)
