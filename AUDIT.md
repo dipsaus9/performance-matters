@@ -1,4 +1,4 @@
-#CSS Performance
+# CSS Performance
 I've checked multiple ways to get a better performance on the Bootstrap website. This part will describe the way I optimalized the CSS.
 
 ## CSS Minifiy
