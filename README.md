@@ -18,7 +18,7 @@ Differences from actual Bootstrap documentation:
 - Expose localhost: `npm run expose`
 
 ## Branches
-There are 3 branches in this project
+There are 4 branches in this project
 * Master
 * CSS-A
 * JS-A
