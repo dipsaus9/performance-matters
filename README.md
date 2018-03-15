@@ -1,28 +1,14 @@
-# Performance matters
+# IMG Performance
+I've checked multiple ways to get a better performance on the Bootstrap website. This part will describe the way I optimalized the Images.
 
-## Project setup
+## IMG Minifiy
+I tested this part on the getting started page. This page loads multiple images. These images are really slowing the page down. By using a simple compression method. I used Tinypng for the compression method.
+This results into a 60% compression. That is a lot.
 
-This project serves an adapted version of the [Bootstrap documentation website](http://getbootstrap.com/). It is based on the [github pages branche of Bootstrap](https://github.com/twbs/bootstrap/tree/gh-pages).
+I also wanted to change the sourceset but this didn't result into a difference for this page.
 
-Differences from actual Bootstrap documentation:
+Before:
+![Image loading time](https://raw.githubusercontent.com/dipsaus9/performance-matters/IMG-A/img.png)
 
-- Added custom webfont
-- Removed third party scripts
-- The src directory is served with [Express](https://expressjs.com/).
-- Templating is done with [Nunjucks](https://mozilla.github.io/nunjucks/)
-
-## Getting started
-
-- Install dependencies: `npm install`
-- Serve: `npm start`
-- Expose localhost: `npm run expose`
-
-## Branches
-There are 3 branches in this project
-* Master
-* CSS-A
-* JS-A
-* IMG-A
-
-In the master you can find the original project. This project will be the slowest of all. When you enter a different branch you can find the result in the AUDIT.md. This file will contain all the conclusions and results of that project.
-Each branch has a diffrent approach of speeding up the page. These tests were all performed on a Chrome browser. 
+After:
+![Image loading time after](https://raw.githubusercontent.com/dipsaus9/performance-matters/IMG-A/minified_img.png)
