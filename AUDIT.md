@@ -6,4 +6,4 @@ This may sound like a easy solution and it is. By doing this the wesbite will lo
 `font-display: swap`
 If you use this code u can tell the browser to use a system font till the custom font is loaded. This way you can always see the text while the page is still loading.
 
-Using these methods I created a faster page. This also results into a faster loading first paint. This give the user a better experience. 
+Using these methods I created a faster page. This also results into a faster loading first paint. This give the user a better experience.
