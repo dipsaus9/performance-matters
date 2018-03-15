@@ -25,4 +25,6 @@ There are 4 branches in this project
 * IMG-A
 
 In the master you can find the original project. This project will be the slowest of all. When you enter a different branch you can find the result in the readme.md. This file will contain all the conclusions and results of that project.
-Each branch has a diffrent approach of speeding up the page. These tests were all performed on a Chrome browser.
+Each branch has a diffrent approach of speeding up the page. These tests were all performed on a Chrome browser. All pages are tested on the home page (except the image branch).
+
+I didn't try all methods on this project. I also didn't try gZip cause I didn't have a server at the time. I assume it also improves the speed of the page. 
