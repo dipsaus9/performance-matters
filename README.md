@@ -1,18 +1,23 @@
-# Performance matters
+# JS Performance
+I've checked multiple ways to get a better performance on the Bootstrap website. This part will describe the way I optimalized the JS.
 
-## Project setup
+## JS Minifiy
+Again for this project Minifiying the files will give you a huge difference. The most import isue here is the amount of function being loaded into the browser. It is a good thing browsers support a cache function. This website really needs this.
+If you minify all the JS files this will be the result:
 
-This project serves an adapted version of the [Bootstrap documentation website](http://getbootstrap.com/). It is based on the [github pages branche of Bootstrap](https://github.com/twbs/bootstrap/tree/gh-pages). 
+Before:
+![Without minify](https://raw.githubusercontent.com/dipsaus9/performance-matters/JS-A/js_without_minify.png)
 
-Differences from actual Bootstrap documentation:
+After:
+![With minify](https://raw.githubusercontent.com/dipsaus9/performance-matters/JS-A/js_with_minify.png)
 
-- Added custom webfont
-- Removed third party scripts
-- The src directory is served with [Express](https://expressjs.com/).
-- Templating is done with [Nunjucks](https://mozilla.github.io/nunjucks/)
+You can see the diffrence in the loading time of the JS files.
 
-## Getting started
+When we look into the JS files you can see clearly the page needs a JS file for IE support. But we are testing on Chrome so we don't need this script here.
 
-- Install dependencies: `npm install`
-- Serve: `npm start`
-- Expose localhost: `npm run expose`
+`<!--[if IE]><script src="/assets/js/ie10-viewport-bug-workaround.js"></script><![endif]-->`
+
+This results into a page that only loads this script on IE.
+
+Result:
+![With minify and without IE script](https://raw.githubusercontent.com/dipsaus9/performance-matters/JS-A/js_disableie.png)
