@@ -12,3 +12,8 @@ Before:
 
 After:
 ![Image loading time after](https://raw.githubusercontent.com/dipsaus9/performance-matters/IMG-A/minified_img.png)
+
+After this I formated all the images to the WebP images. This resulted in a 40kb win.
+
+After with WebP:
+![Image loading time webP after](https://raw.githubusercontent.com/dipsaus9/performance-matters/IMG-A/minified_img_webp.png)
